@@ -3,5 +3,34 @@
 @import "~material-icons/iconfont/material-icons.scss";
 @import "../node_modules/font-awesome/scss/font-awesome.scss";
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+// html,
+// body {
+//   height: 100%;
+// }
+* {
+  font-size: 16px;
+}
+body {
+  // margin: 0;
+  //   font-family: Roboto, "Helvetica Neue", sans-serif;
+  font-family: "Ubuntu", sans-serif;
+}
+
+@media (max-width: 576px) {
+  * {
+    font-size: 10px;
+  }
+  nav.navbar.navbar-expand{
+    padding: 0.5rem 1.5rem;
+  }
+}
+@media (min-width: 576px) and (max-width: 768px) {
+ *{
+    font-size: 12px;
+  }
+}
+@media (min-width:768px) and (max-width:1210px){
+  *{
+    font-size: 14px;
+  }
+}

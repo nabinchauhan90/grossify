@@ -12,7 +12,7 @@
   font-family: "Material Icons";
   font-weight: normal;
   font-style: normal;
-  font-size: 24px; /* Preferred icon size */
+  font-size: 1.5rem; /* Preferred icon size */
   display: inline-block;
   line-height: 1;
   text-transform: none;
@@ -68,12 +68,12 @@ nav {
   background-color: rgba(212, 205, 205, 0.18);
   background-color: rgba(45, 40, 39, 0.35);
   background-color: rgba(45, 40, 39, 0.56);
-  height: 80px;
+  height: 5rem;
   align-items: center;
   padding: 0.5rem 4rem;
 }
 .navbar-brand img {
-  width: 150px;
+  width: 9.3rem;
 }
 .header-menu {
   display: flex;
@@ -95,13 +95,13 @@ nav {
 .header-link-seperator {
   margin: auto 0.5rem;
   // border-left:1px solid white;
-  height: 17px;
-  width: 1px;
+  height: 1.01rem;
+  width: 0.0625rem;
   background-color: $base-color;
 }
 
 .hero-contents {
-  height: 600px;
+  height: 37.5rem;
   // background-image: linear-gradient(to left bottom, #4c2e3f, #6c344b, #8d3a52, #ae4052, #cd494d, #d66441, #d88038, #d49c38, #bbbe60, #a9d997, #a8efcf, #f05e3c);
   // background-image: linear-gradient(to left bottom, #796f90, #926c98, #b06595, #ce5c86, #e4566c, #eb565e, #ef594e, #f05e3c, #f05e3c, #f05e3c, #f05e3c, #f05e3c);
   // background-image: linear-gradient(to bottom, #bcabe5, #d09ada, #e586c3, #f572a3, #fb637a, #f15f65, #e55c51, #d75b3e, #c45940, #b15641, #9f5341, #8c5042);
@@ -158,7 +158,7 @@ nav {
 }
 
 .image-contnet img {
-  width: 600px;
+  width: 37.5rem;
 }
 
 .hero-title-text {
@@ -170,7 +170,7 @@ nav {
 }
 .hero-title-button {
   margin: 2rem auto;
-  border-radius: 7px;
+  border-radius: 0.5rem;
   button:hover {
     color: $base-color;
   }
@@ -186,8 +186,9 @@ nav {
     }
   }
   .main-content-panel {
-    display: flex;
+    // display: flex;
     width: 100%;
+    margin:0;
     justify-content: space-between;
     .content-feature {
       text-align: center;
@@ -201,10 +202,10 @@ nav {
           align-items: center;
           justify-content: center;
           background-image: $base-background-image;
-          width: 150px;
-          height: 150px;
+          width: 9rem;
+          height: 9rem;
           border-radius: 50%;
-          padding: 10px;
+          padding: 0.6rem;
           // background-color: $base-color;
           color: white;
           font-size: 4rem;
@@ -247,14 +248,17 @@ section.text-banner{
         justify-content: center;
         display: flex;
         align-items: center;
-        button{
+        a.btn{
             color:$secondary-color;
             width: 25%;
             // height:10%;
-        }
-        button:hover{
-            color:$base-color;
-        }
+          &:hover{
+            color: $base-color;
+          }
+          }
+        // button:hover{
+        //     color:$base-color;
+        // }
     }   
     
 }
@@ -271,10 +275,13 @@ section.question-sections{
       margin-bottom:3rem;
     }
     .faq-panel{
+      ul{
+        padding:0;
+      }
       .faq-panel-body{
         //  padding:1rem 3rem;
-        margin-bottom: 6px; 
-        border-radius: 6px;
+        margin-bottom: 0.4rem; 
+        border-radius: 0.4rem;
         .faq-panel-header{
           padding:1rem 3rem;
           align-items: center;
@@ -331,6 +338,9 @@ section.footer{
     // align-items: center;
     .brand-logo{
       @extend .navbar-brand ;
+      img{
+        margin:0rem 1rem 1rem 0rem;
+      }
     }
     .align-items-between{
       display: flex;
@@ -339,9 +349,9 @@ section.footer{
     .footer-links{
       h3{
         font-size: 1.2rem;
-        color:$base-color;
+        color: $base-color;
         margin:0rem 0rem 1rem;
-        font-weight: 700;
+        font-weight: 600;
       }
       ul{
         list-style: none;
@@ -358,7 +368,6 @@ section.footer{
     }
     .social-links{
       @extend .footer-links;
-      // padding-left: 12vw;
       ul{
         display: inline-flex;
         li{
@@ -374,8 +383,10 @@ section.footer{
         }
       }
       button.btn-apple{
-          border:1px solid $base-color;
+          border:0.0625rem solid $base-color;
           color:$base-color;
+          padding:0.4rem;
+          // width:10%;
           &:hover{
             color:$secondary-color;
             background-color: $base-color;
@@ -391,5 +402,43 @@ section.footer{
       font-weight: 600;
       font-size: 0.9rem;
      } 
+  }
+}
+
+
+//Media Queries
+
+
+
+// @media (max-width: 576px	) {
+//   body{
+//     font-size: 5px;
+//   }
+//   *{
+//     font-size: 0.3rem;
+//   } 
+//   }
+//  @media (min-width: 576px) and (max-width: 768px) {
+   
+//    }
+// @media (min-width: @screen-md-min) and (max-width: @screen-md-max) {  }
+// @media (min-width: @screen-lg-min) {  }
+
+@media (max-width: 576px) {
+  * {
+    font-size: 10px;
+  }
+  nav.navbar.navbar-expand{
+    padding: 0.5rem 1.5rem;
+  }
+}
+@media (min-width: 576px) and (max-width: 768px) {
+ *{
+    font-size: 12px;
+  }
+}
+@media (min-width:768px) and (max-width:1210px){
+  *{
+    font-size: 14px;
   }
 }

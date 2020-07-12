@@ -1,6 +1,6 @@
 <header>
   <nav class="navbar navbar-expand">
-    <a href="#" class="navbar-brand">
+    <a href="/" class="navbar-brand">
       <img src="../../assets/Grossify logo_PNG.png" alt="" />
     </a>
     <!-- <button
@@ -47,7 +47,7 @@
         </h1>
       </div>
       <div class="hero-title-button">
-        <button class="btn btn-outline-light btn-lg">Download App</button>
+       <a href="https://play.google.com/store/apps/details?id=in.grossify.grossifyapp"><button class="btn btn-outline-light btn-lg">Download App</button></a> 
       </div>
     </div>
   </div>
@@ -59,7 +59,7 @@
         <h1>Why Grossify?</h1>
       </div>
       <div class="main-content-panel row">
-        <div class="content-feature col-12 col-md-3">
+        <div class="content-feature col-12 col-md">
           <div class="feature-image-icons">
             <span class="material-icons">
               storefront
@@ -72,7 +72,7 @@
           </p>
         </div>
 
-        <div class="content-feature col-12 col-md-3">
+        <div class="content-feature col-12 col-md">
           <div class="feature-image-icons">
             <span class="material-icons">
               check_box
@@ -85,7 +85,7 @@
           </p>
         </div>
 
-        <div class="content-feature col-12 col-md-3">
+        <div class="content-feature col-12 col-md">
           <div class="feature-image-icons">
             <span class="material-icons">
               local_shipping
@@ -98,7 +98,7 @@
           </p>
         </div>
 
-        <div class="content-feature col-12 col-md-3">
+        <div class="content-feature col-12 col-md">
           <div class="feature-image-icons">
             <span class="material-icons">
               cached
@@ -120,7 +120,10 @@
       <div class="col-12 text-banner-content">
         <h1>Looking for Digital Platform to Sell your Products?</h1>
         <div class="text-banner-button">
-          <button class="btn btn-outline-light btn-lg">Register</button>
+          <a href="https://seller.grossify.in" class="btn btn-outline-light btn-lg">
+            <!-- <button class="btn btn-outline-light btn-lg">Register</button> -->
+            Register
+          </a>
         </div>
       </div>
     </div>
@@ -134,15 +137,15 @@
         <div class="faq-panel">
           <ul>
             <mat-accordion>
-              <mat-expansion-panel class="faq-panel-body" *ngFor="let faq of faqs">
+              <mat-expansion-panel class="faq-panel-body" *ngFor="let faq of $faq|async">
                 <mat-expansion-panel-header class="faq-panel-header">
                   <mat-panel-title>
-                    <p>{{faq.question}}</p>
+                    <p>{{faq.FAQuestions}}</p>
                   </mat-panel-title>
                 </mat-expansion-panel-header>
                 <hr class="faq-seperator">
                 <div class="faq-answer"> 
-                  <p>{{faq.answer}}</p>
+                  <p>{{faq.FAAnswers}}</p>
                 </div>
               </mat-expansion-panel>
             </mat-accordion>
@@ -160,7 +163,7 @@
         <div class="download-now-content">
             <h1>Start From Today</h1>
             <div class="app-download-link">
-              <button class="btn btn-outline-light btn-lg">Download App</button>
+             <a href="https://play.google.com/store/apps/details?id=in.grossify.grossifyapp"><button class="btn btn-outline-light btn-lg">Download App</button></a> 
             </div>
         </div>
       </div>
@@ -172,9 +175,9 @@
     <div class="col-12 footer-container">
       <div class="row align-items-between">
         <div class="brand-logo col-12 col-md">
-          <a href=""><img src="../../assets/Grossify logo_PNG.png" alt="" /></a>
+          <a href="/"><img src="../../assets/Grossify logo_PNG.png" alt="" /></a>
         </div>
-        <div class="footer-links col-12 col-md">
+        <div class="footer-links col-12  col-md">
           <h3>General</h3>
           <ul>
             <li><a href="#">About</a></li>
@@ -183,7 +186,7 @@
             <li><a href="#">For the Record</a></li>
           </ul>
         </div>
-        <div class="footer-links col-12 col-md">
+        <div class="footer-links col-12  col-md">
           <h3>Connect</h3>
           <ul>
             <li><a href="#">Contact Us</a></li>
@@ -192,7 +195,7 @@
             <li><a href="#">Blog</a></li>
           </ul>
         </div>
-        <div class="footer-links col-12 col-md">
+        <div class="footer-links col-12  col-md">
           <h3>Legal</h3>
           <ul>
             <li><a href="#">Terms & Conditions</a></li>
@@ -201,29 +204,30 @@
             <!-- <li><a href="#">Site Map</a></li> -->
           </ul>
         </div>
-        <div class="social-links col-12 col-md">
+        <div class="social-links col-12  col-md">
           <h3>Social Links</h3>
           <ul>
             <li>
-              <a href="#">
+              <a href="https://facebook.com/grossifyin">
                 <i class="fa fa-facebook-square" aria-hidden="true"></i>
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="https://twitter.com/grossifyin">
                 <i class="fa fa-twitter-square" aria-hidden="true"></i>
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="https://instagram.com/grossifyin">
                 <i class="fa fa-instagram" aria-hidden="true"></i>
               </a>
             </li>
           </ul>
           <div class="download-app">
-            <button class="btn btn-apple btn-outline-light">
+            <a href="https://play.google.com/store/apps/details?id=in.grossify.grossifyapp"><button class="btn btn-apple btn-outline-light">
               Download App
-            </button>
+            </button></a>
+            
           </div>
         </div>
       </div>
