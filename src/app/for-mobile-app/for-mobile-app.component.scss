@@ -54,9 +54,9 @@ $base-background-image: linear-gradient(
 // * {
 //   font-family: "Source Sans Pro", sans-serif;
 // }
-body{
-  font-family: "Source Sans Pro", sans-serif;
-}
+// body{
+//   font-family: "Source Sans Pro", sans-serif;
+// }
 header {
   position: fixed;
   width: 100%;
@@ -423,22 +423,26 @@ section.footer{
 //    }
 // @media (min-width: @screen-md-min) and (max-width: @screen-md-max) {  }
 // @media (min-width: @screen-lg-min) {  }
-
-@media (max-width: 576px) {
-  * {
-    font-size: 10px;
-  }
-  nav.navbar.navbar-expand{
-    padding: 0.5rem 1.5rem;
-  }
-}
-@media (min-width: 576px) and (max-width: 768px) {
- *{
-    font-size: 12px;
-  }
-}
-@media (min-width:768px) and (max-width:1210px){
-  *{
-    font-size: 14px;
-  }
-}
+// @media(max-width:450px){
+//   *{
+//     font-size: 5px;
+//   }
+// }
+// @media (max-width: 576px) {
+//   * {
+//     font-size: 10px;
+//   }
+//   nav.navbar.navbar-expand{
+//     padding: 0.5rem 1.5rem;
+//   }
+// }
+// @media (min-width: 576px) and (max-width: 768px) {
+//  *{
+//     font-size: 12px;
+//   }
+// }
+// @media (min-width:768px) and (max-width:1210px){
+//   *{
+//     font-size: 14px;
+//   }
+// }

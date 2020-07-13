@@ -1,0 +1,44 @@
+@import '../for-mobile-app/for-mobile-app.component.scss';
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 300;
+  }
+  nav {
+    // background-color: rgba(99, 88, 88, 0.651);
+    background-color: rgba(212, 205, 205, 0.18);
+    background-color: rgba(45, 40, 39, 0.35);
+    background-color: rgba(45, 40, 39, 0.56);
+    height: 5rem;
+    align-items: center;
+    padding: 0.5rem 4rem;
+  }
+  .navbar-brand img {
+    width: 9.3rem;
+  }
+  .header-menu {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .header-menu ul li a {
+    padding: 1rem;
+  }
+  .header-menu li a {
+    color: $base-color;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    // font-family: Fira Sans;
+  }
+  .header-menu ul li a:hover {
+    color: white;
+  }
+  .header-link-seperator {
+    margin: auto 0.5rem;
+    // border-left:1px solid white;
+    height: 1.01rem;
+    width: 0.0625rem;
+    background-color: $base-color;
+  }

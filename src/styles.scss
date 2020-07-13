@@ -7,6 +7,24 @@
 // body {
 //   height: 100%;
 // }
+$base-color: #f05e3c;
+$secondary-color:white;
+$third-color:rgba(45, 40, 39, 0.77);
+$base-background-image: linear-gradient(
+  to bottom,
+  #2c1a55,
+  #4f1b55,
+  #6c1e52,
+  #82264c,
+  #943544,
+  #9e3c41,
+  #a7453d,
+  #af4e39,
+  #b84e37,
+  #c04e35,
+  #c94d33,
+  #d14d30
+);
 * {
   font-size: 16px;
 }
@@ -16,7 +34,12 @@ body {
   font-family: "Ubuntu", sans-serif;
 }
 
-@media (max-width: 576px) {
+@media(max-width:450px){
+  *{
+    font-size: 5px;
+  }
+}
+@media(min-width:450px) and(max-width: 576px) {
   * {
     font-size: 10px;
   }
