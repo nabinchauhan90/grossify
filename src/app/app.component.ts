@@ -9,4 +9,8 @@ export class AppComponent implements OnInit {
   ngOnInit(): void {
   }
   title = 'grossify';
+  resetPosition() {
+    let myDiv = document.getElementById("detail");
+    myDiv.scrollTop = 0;
+  }
 }

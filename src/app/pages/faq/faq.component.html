@@ -1,0 +1,41 @@
+<section class="faq-hero">
+  <div class="hero-contents">
+    <div class="text-content">
+      <h1 class="special-title-text">
+        FAQ
+      </h1>
+    </div>
+  </div>
+</section>
+<section class="question-sections">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 faq">
+        <h1>Any Questions?</h1>
+        <div class="title-underline">
+          <span class="main-content-title-underline"></span>
+        </div>
+        <div class="faq-panel">
+          <ul>
+            <mat-accordion>
+              <mat-expansion-panel
+                class="faq-panel-body"
+                *ngFor="let faq of $faq | async"
+              >
+                <mat-expansion-panel-header class="faq-panel-header">
+                  <mat-panel-title>
+                    <p>{{ faq.FAQuestions }}</p>
+                  </mat-panel-title>
+                </mat-expansion-panel-header>
+                <hr class="faq-seperator" />
+                <div class="faq-answer">
+                  <p>{{ faq.FAAnswers }}</p>
+                </div>
+              </mat-expansion-panel>
+            </mat-accordion>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

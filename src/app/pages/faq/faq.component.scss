@@ -1,0 +1,28 @@
+@import "../../for-mobile-app/for-mobile-app.component.scss";
+section.faq-hero {
+  .hero-contents {
+    height: 30.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+section.question-sections{
+    margin:4rem 0rem 1rem;
+  .faq{
+    h1{
+      font-weight: 900;
+      // padding-bottom: 3rem;
+      padding:0.5rem;
+    }
+    .faq-panel{
+      margin-top:3rem;
+      .faq-panel-body{
+        padding: 0.5rem;
+        .faq-answer{
+          padding:1.5rem;
+        }
+      } 
+    }
+  }
+}

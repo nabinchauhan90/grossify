@@ -1,0 +1,96 @@
+@import "../../for-mobile-app/for-mobile-app.component.scss";
+section.download-hero {
+  .hero-contents {
+    height: 30.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+section.avaliable-download {
+  margin: 4rem 0rem;
+  .avaliable-download-container {
+    display: flex;
+    .avaliable-download-image {
+      padding-top: 4rem;
+      width: 40%;
+    }
+    .avaliable-download-text {
+      width: 60%;
+      padding: 4rem 0rem 0rem 6rem;
+      h1 {
+        font-size: 3rem;
+        padding: 0.5rem 0rem;
+        font-weight: 900;
+        line-height: 1.32;
+        letter-spacing: -0.75px;
+        .title-underline {
+          justify-content: flex-start;
+          .main-content-title-underline {
+            width: 26rem;
+            margin-top: 0.5rem;
+          }
+        }
+      }
+      p {
+        font-size: 1.2rem;
+        font-weight: 500;
+        line-height: 1.42;
+        width: 80%;
+        color: $third-color;
+        margin: 1rem 0rem;
+      }
+    }
+    .download-app {
+      h4 {
+        font-size: 1.6rem;
+        font-weight: 900;
+        .title-underline {
+          justify-content: flex-start;
+          .main-content-title-underline {
+            width: 11rem;
+            margin-top: 0.5rem;
+          }
+        }
+        margin-bottom: 1rem;
+      }
+      .download-image {
+        padding: 1rem 0rem;
+        img {
+          width: 30%;
+        }
+      }
+    }
+  }
+}
+section.avaliable-download-business {
+  @extend .avaliable-download;
+  background-color: $third-color;
+  background-image: $base-background-image;
+  color: $secondary-color;
+  padding: 2rem;
+  .avaliable-download-container {
+    .avaliable-download-text {
+      h1 {
+        .title-underline {
+          .main-content-title-underline {
+            border-color: $secondary-color;
+          }
+        }
+      }
+      p {
+        color: $secondary-color;
+      }
+      .download-app {
+        h4 {
+          color: $secondary-color;
+          .title-underline {
+            .main-content-title-underline {
+              border-color: $secondary-color;
+            }
+          }
+        }
+      }
+    }
+  }
+}
