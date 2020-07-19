@@ -5,39 +5,11 @@ section.about-us-hero {
     display: flex;
     justify-content: center;
     align-items: center;
-    // background-image: linear-gradient(to top, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #f8f3ff, #f4e7fc, #f4d9f7, #fcb8df, #ff95b6, #ff747e, #f05e3c);
-    // background-image: linear-gradient(
-    //   to top,
-    //   #de401b,
-    //   #d85534,
-    //   #d0674b,
-    //   #c67761,
-    //   #b98577,
-    //   #b98577,
-    //   #b98578,
-    //   #b98578,
-    //   #c67763,
-    //   #d0684e,
-    //   #d85737,
-    //   #de431f
-    // );
+   
     .text-content {
       .hero-title-text {
         h1 {
             @extend .special-title-text;
-        //   font-size: 8rem;
-        //   font-weight: 900;
-        //   border-bottom: 0.6rem dotted $secondary-color;
-        //   //   border-bottom: 0.5rem dotted $base-color;
-        //   //   font-size: 72px;
-        //   background: -webkit-linear-gradient($base-color, $base-color);
-        //   -webkit-text-fill-color: transparent;
-        //   -webkit-background-clip: text;
-        //   background-clip: text;
-        //   width: 100%;
-        //   text-shadow: 0.04em 0.04em 0 #ffffffd9;
-        //   text-transform: capitalize;
-          //   text-shadow: 0.04em 0.04em 0 #eb530d;
         }
       }
     }

@@ -10,11 +10,12 @@ import { FeaturesComponent } from './features/features.component';
 import { DownloadComponent } from './download/download.component';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ContactUsComponent } from './contact-us/contact-us.component';
 // import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 @NgModule({
-  declarations: [HowItWorksComponent,HomeComponent, FaqComponent, AboutUsComponent, FeaturesComponent, DownloadComponent],
+  declarations: [HowItWorksComponent,HomeComponent, FaqComponent, AboutUsComponent, FeaturesComponent, DownloadComponent, ContactUsComponent],
   imports: [
     CommonModule,
     PagesRoutingModule,
