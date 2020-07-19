@@ -36,7 +36,16 @@ body {
 
 @media(max-width:450px){
   *{
-    font-size: 5px;
+    font-size: 6px;
+  }
+  .team-main-content{
+    h4{
+      font-size:2rem ;
+    }
+    p{
+      font-size: 1.5rem;
+      padding:0rem 7rem
+    }
   }
 }
 @media(min-width:450px) and(max-width: 576px) {

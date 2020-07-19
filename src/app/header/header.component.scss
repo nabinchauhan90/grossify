@@ -15,6 +15,15 @@ header {
     align-items: center;
     padding: 0.5rem 4rem;
   }
+  .navbar-toggler{
+    display: none;
+    color: $base-color;
+    position: absolute;
+    top:1.2rem;
+    // margin:1rem;
+    right:2rem;
+    cursor: pointer;
+  }
   .navbar-brand img {
     width: 9.3rem;
   }
@@ -41,4 +50,72 @@ header {
     height: 1.01rem;
     width: 0.0625rem;
     background-color: $base-color;
+  }
+
+  @media (max-width:425px){
+    .mobile-overlay{
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: rgba(0,0,0,.6);
+      opacity: 0;
+      -webkit-transition: opacity .3s linear;
+      transition: opacity .3s linear;
+      will-change: opacity;
+    }
+    nav{
+      height: 7rem;
+      // padding:0rem 3rem;
+      padding:0;
+      padding-left: 5rem;
+      align-items: flex-start;
+      display: flex;
+      .navbar-brand{
+        padding-top:2rem;
+        img{
+          width: 10rem;
+        }
+      }
+
+    }
+    .navbar-nav{
+      flex-direction: column;
+      background-color:$base-color;
+      align-items: center;
+      width: 50%;
+      display: none;
+      height: 100vh;
+      padding: 2rem 2rem;
+      li.header-link-seperator{
+        display: none;
+        padding:0;
+        margin:0;
+      }
+      li{
+        width: 100%;
+        text-align: center;
+        display: flex;
+        margin-top:3rem;
+        align-items: center;
+        justify-content: center;
+        
+        a{
+          font-size: 2rem;
+          color: $third-color;
+          font-weight: 500;
+        }
+      }
+    }
+    .navbar-nav.active{
+      display: flex;
+    }
+    .navbar-toggler{
+      display: flex;
+      color: $secondary-color;
+      .material-icons{
+        font-size: 4rem;
+      }
+    }
   }

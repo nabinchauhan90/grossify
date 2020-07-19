@@ -463,20 +463,33 @@ section.client-says {
     .client-says-content {
       padding: 0.5rem;
       padding-top: 3rem;
+      span.quote-for-seller{
+        font-size: 3rem;
+        display: flex;
+        color:$base-color;
+        margin-bottom: -2.5rem;
+        margin-left: -2rem;
+        opacity: 0.4;
+      }
       p {
         text-align: left;
-        margin: 1rem;
+        // margin: 1rem;
+        width: 60%;
         font-style: italic;
         line-height: 1.5rem;
         font-size: 1rem;
         margin-left: 0rem;
+        margin-right:1rem;
         margin-top: 0rem;
+        margin-bottom: 0rem;
       }
       .client-details {
         display: flex;
+        margin-top:2rem;
         .client-image {
           img {
-            width: 4.2rem;
+            width: 5.2rem;
+            height:5.2rem;
             border-radius: 50%;
           }
         }

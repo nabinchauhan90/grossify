@@ -97,3 +97,34 @@ section.footer {
     }
   }
 }
+
+
+@media (max-width: 450px) {
+  section.footer {
+    .footer-contanier {
+      .footer-links {
+        h3 {
+          font-size: 1.8rem;
+        }
+        ul {
+          li {
+            a {
+              font-size: 1.5rem;
+            }
+            .contact-detail {
+              .contact-detail-icon {
+                font-size: 2rem;
+              }
+              .contact-detail-text {
+                a {
+                  font-size: 1.5rem;
+                }
+              }
+            }
+          }
+        }
+        
+      }
+    }
+  }
+}

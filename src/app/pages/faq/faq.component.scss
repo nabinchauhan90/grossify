@@ -1,10 +1,13 @@
 @import "../../for-mobile-app/for-mobile-app.component.scss";
 section.faq-hero {
   .hero-contents {
+    background: url('../../../assets/faq-front.png'),$base-background-image;
     height: 30.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-blend-mode: multiply;
+    background-position: right;
   }
 }
 section.question-sections{
@@ -25,4 +28,27 @@ section.question-sections{
       } 
     }
   }
+}
+@media (max-width:450px){
+  section.question-sections{
+    .faq{
+      .faq-panel{
+        .faq-panel-body{
+          .faq-panel-header{
+            padding:0.5rem 3rem;
+            p{
+              font-size:2rem;
+            }
+          }
+        }
+        .faq-answer{
+          p{
+            font-size: 1.7rem;
+          }
+        }
+      }
+    }
+    
+  }
+
 }
