@@ -1,11 +1,15 @@
 @import "../../for-mobile-app/for-mobile-app.component.scss";
 
-section.hero{
-  .hero-contents{
-    // background-image: url('../../../assets/home-page.png'),$base-background-image;
+section.client-says{
+  .client-says-container{
+    justify-content: space-evenly;
+    .client-says-content{
+      p{
+        width: 80%;
+      }
+    }
   }
 }
-
 @media (max-width: 450px) {
   .main-content {
     .main-content-title {
@@ -47,6 +51,9 @@ section.hero{
         }
       }
       .client-says-content {
+        span.quote-for-seller{
+          margin-left: 3rem;
+        }
         padding: 3rem 6rem;
         p {
           padding: 0rem 6rem;
@@ -57,7 +64,8 @@ section.hero{
           align-items: center;
           .client-image {
             img {
-              width: 6.2rem;
+              width: 7.2rem;
+              height: 7.2rem;
             }
           }
           .client-details-text {
