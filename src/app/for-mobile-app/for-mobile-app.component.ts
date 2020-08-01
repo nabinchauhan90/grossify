@@ -18,7 +18,7 @@ export class ForMobileAppComponent implements OnInit {
   ngOnInit(): void {
     // this.formobileservice.getFaq().subscribe(console.log);
     this.$faq=this.formobileservice.getFaq();
-    this.$faq.subscribe(console.log);
+    // this.$faq.subscribe(console.log);
   }
   $faq:Observable<Object>;
 }

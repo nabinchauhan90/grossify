@@ -1,0 +1,135 @@
+@import "../for-mobile-app/for-mobile-app.component.scss";
+section.footer {
+  padding: 3.5rem 4rem 0.5rem 4rem;
+  background-color: $container-color;
+  .footer-container {
+    // display: flex;
+    // justify-content: space-between;
+    // align-items: center;
+    .brand-logo {
+      @extend .navbar-brand;
+      padding:0;
+      img {
+        margin: 0rem 1rem 2rem 0rem;
+      }
+    }
+    .align-items-between {
+      display: flex;
+      justify-content: space-between;
+    }
+    .footer-links {
+      padding: 0rem 0.5rem;
+      h3 {
+        font-size: 1.2rem;
+        color: $base-color;
+        margin: 0rem 0rem 1rem;
+        font-weight: 600;
+      }
+      ul {
+        list-style: none;
+        padding: 0;
+        li {
+          padding: 0.3rem 0rem;
+          a {
+            font-size: 1rem;
+            cursor: pointer;
+            color: $third-color;
+          }
+          .contact-detail {
+            display: flex;
+            align-items: center;
+            p {
+              font-size: 1rem;
+              color: $third-color;
+            }
+            .contact-detail-icon{
+              padding-right: 1rem;
+              &:hover{
+                color:$base-color;
+              }
+            }
+            .contact-detail-icon-2{
+              font-size: 1.5rem;
+            }
+            &:hover{
+              .contact-detail-icon{
+                color: $base-color;
+              }
+              p{
+                color: black;
+              }
+            }
+          }
+        }
+      }
+    }
+    .social-links {
+      @extend .footer-links;
+      ul {
+        display: inline-flex;
+        li {
+          a {
+            font-size: 2rem;
+            // c<h4>Email Us</h4>
+            // color:red;
+            text-decoration: none;
+            padding: 1rem 1rem 0rem 0rem;
+            &:hover {
+              color: $base-color;
+            }
+          }
+        }
+      }
+      button.btn-apple {
+        border: 0.0625rem solid $base-color;
+        color: $base-color;
+        padding: 0.4rem;
+        // width:10%;
+        &:hover {
+          color: $secondary-color;
+          background-color: $base-color;
+        }
+      }
+    }
+  }
+  .footer-copyright {
+    text-align: center;
+    p {
+      margin: 0;
+      color: $third-color;
+      font-weight: 600;
+      font-size: 0.9rem;
+    }
+  }
+}
+
+
+@media (max-width: 450px) {
+  section.footer {
+    .footer-contanier {
+      .footer-links {
+        h3 {
+          font-size: 1.8rem;
+        }
+        ul {
+          li {
+            a {
+              font-size: 1.5rem;
+            }
+            .contact-detail {
+              .contact-detail-icon {
+                font-size: 2rem;
+              }
+              .contact-detail-text {
+                a {
+                  font-size: 1.5rem;
+                }
+              }
+            }
+          }
+        }
+        
+      }
+    }
+  }
+}

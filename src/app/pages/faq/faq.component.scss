@@ -1,0 +1,62 @@
+@import "../../for-mobile-app/for-mobile-app.component.scss";
+section.faq-hero {
+  .hero-contents {
+    background: url('../../../assets/faq-front.png'),$base-background-image;
+    height: 30.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-blend-mode: multiply;
+    background-position: right;
+  }
+}
+section.question-sections{
+    margin:4rem 0rem 1rem;
+  .faq{
+    h1{
+      font-weight: 900;
+      // padding-bottom: 3rem;
+      padding:0.5rem;
+    }
+    .title-underline{
+      .main-content-title-underline{
+        width:34rem;
+      }
+    }
+    .faq-panel{
+      margin-top:3rem;
+      .faq-panel-body{
+        padding: 0.5rem;
+        .faq-answer{
+          padding:1.5rem;
+          p{
+            text-align: left;
+          }
+        }
+      } 
+    }
+  }
+}
+@media (max-width:450px){
+  section.question-sections{
+    .faq{
+      .faq-panel{
+        .faq-panel-body{
+          .faq-panel-header{
+            padding:0.5rem 3rem;
+            p{
+              font-size:2rem;
+            }
+          }
+        }
+        .faq-answer{
+          p{
+            font-size: 1.7rem;
+          }
+        }
+      }
+    }
+    
+  }
+
+}
