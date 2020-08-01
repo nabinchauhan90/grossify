@@ -17,7 +17,7 @@ const routes: Routes = [
       scrollPositionRestoration: 'enabled',
       anchorScrolling: 'enabled',
       onSameUrlNavigation: 'reload',
-      enableTracing: true,
+      // enableTracing: true, make it change if some error occurs.
     }),
   ],
   exports: [RouterModule],

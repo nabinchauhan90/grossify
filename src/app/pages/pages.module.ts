@@ -11,11 +11,13 @@ import { DownloadComponent } from './download/download.component';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ContactUsComponent } from './contact-us/contact-us.component';
+import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
+import { TermsOfUseComponent } from './terms-of-use/terms-of-use.component';
 // import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 @NgModule({
-  declarations: [HowItWorksComponent,HomeComponent, FaqComponent, AboutUsComponent, FeaturesComponent, DownloadComponent, ContactUsComponent],
+  declarations: [HowItWorksComponent,HomeComponent, FaqComponent, AboutUsComponent, FeaturesComponent, DownloadComponent, ContactUsComponent, PrivacyPolicyComponent, TermsOfUseComponent],
   imports: [
     CommonModule,
     PagesRoutingModule,

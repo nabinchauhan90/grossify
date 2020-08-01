@@ -10,6 +10,14 @@ section.client-says{
     }
   }
 }
+
+section.hero{
+  .hero-contents {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
 @media (max-width: 450px) {
   .main-content {
     .main-content-title {

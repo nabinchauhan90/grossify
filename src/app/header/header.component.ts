@@ -10,8 +10,6 @@ export class HeaderComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-  console.log(document.getElementsByClassName('navbar-toggler'));
-  console.log(document.getElementsByClassName('navbar-nav')[0])
   this.navslide();  
 }
   // toggleButton= document.getElementsByClassName('navbar-toggler')[0];

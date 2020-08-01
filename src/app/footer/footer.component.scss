@@ -32,10 +32,12 @@ section.footer {
           padding: 0.3rem 0rem;
           a {
             font-size: 1rem;
+            cursor: pointer;
             color: $third-color;
           }
           .contact-detail {
             display: flex;
+            align-items: center;
             p {
               font-size: 1rem;
               color: $third-color;
@@ -45,6 +47,9 @@ section.footer {
               &:hover{
                 color:$base-color;
               }
+            }
+            .contact-detail-icon-2{
+              font-size: 1.5rem;
             }
             &:hover{
               .contact-detail-icon{

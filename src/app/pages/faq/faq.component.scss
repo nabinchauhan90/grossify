@@ -29,6 +29,9 @@ section.question-sections{
         padding: 0.5rem;
         .faq-answer{
           padding:1.5rem;
+          p{
+            text-align: left;
+          }
         }
       } 
     }

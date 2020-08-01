@@ -1,0 +1,23 @@
+@import "../../for-mobile-app/for-mobile-app.component.scss";
+section.privacy-policy{
+    margin-top:5rem;
+    padding-bottom: 4rem;
+    .privacy-policy-container{
+        padding:2.5rem 4rem;
+        // margin:2rem;
+        background-color: #f5f5f5;
+        h1{
+            text-align: center;
+            // margin-bottom: 2rem;
+        }
+        .main-content-title-underline{
+            margin-bottom: 3rem;
+        }
+        h4{
+            font-size: 1.5rem;
+        }
+        p{
+            font-size: 1rem;
+        }
+    }
+}

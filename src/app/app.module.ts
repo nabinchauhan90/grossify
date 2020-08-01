@@ -10,13 +10,14 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { PagesComponent } from './pages/pages.component';
 import { PagesModule } from './pages/pages.module';
+import {HashLocationStrategy, LocationStrategy, PathLocationStrategy } from  '@angular/common';
 @NgModule({
   declarations: [
     AppComponent,
     ForMobileAppComponent,
     HeaderComponent,
     FooterComponent,
-    PagesComponent
+    PagesComponent,
   ],
   imports: [
     BrowserModule,
@@ -26,7 +27,9 @@ import { PagesModule } from './pages/pages.module';
     HttpClientModule,
     PagesModule
   ],
-  providers: [],
+  providers: [
+    {provide:LocationStrategy,useClass:PathLocationStrategy}
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

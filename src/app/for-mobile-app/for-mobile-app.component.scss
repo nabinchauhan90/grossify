@@ -35,9 +35,9 @@
 
 $base-color: #f05e3c;
 $secondary-color: white;
-// $secondary-color: F5F5F5;
+//  $secondary-color: F5F5F5;
 $third-color: rgba(45, 40, 39, 0.77);
-$container-color:#f5f5f5;
+ $container-color:#f5f5f5;
 $base-background-image: linear-gradient(
   to bottom,
   #2c1a55,
@@ -53,20 +53,20 @@ $base-background-image: linear-gradient(
   #c94d33,
   #d14d30
 );
-
+$base-background-image:linear-gradient(to right, #f05e3c, #ef5e32, #ed5e26, #ea5f18, #e76000);
 //underline element
 .title-underline {
   display: flex;
   justify-content: center;
   .main-content-title-underline {
-    border: 1px solid #f05e3c;
+    border: 1px solid $base-color;
     width: 17rem;
     text-align: center;
   }
 }
 //Special text-for main-banner
 h1.special-title-text {
-  font-size: 8rem;
+  font-size: 6rem;
   font-weight: 900;
   border-bottom: 0.6rem dotted $secondary-color;
   //   border-bottom: 0.5rem dotted $base-color;
@@ -130,10 +130,12 @@ nav {
   background-color: $base-color;
 }
 
-//Above section is header.DOn't touch that
-
+//Above section is for header.
 .hero-contents {
   height: 37.5rem;
+  animation: bg-changes 10s ease-in-out infinite;
+  position: relative;
+  background-color: $base-color;
   // background-image: linear-gradient(to left bottom, #4c2e3f, #6c344b, #8d3a52, #ae4052, #cd494d, #d66441, #d88038, #d49c38, #bbbe60, #a9d997, #a8efcf, #f05e3c);
   // background-image: linear-gradient(to left bottom, #796f90, #926c98, #b06595, #ce5c86, #e4566c, #eb565e, #ef594e, #f05e3c, #f05e3c, #f05e3c, #f05e3c, #f05e3c);
   // background-image: linear-gradient(to bottom, #bcabe5, #d09ada, #e586c3, #f572a3, #fb637a, #f15f65, #e55c51, #d75b3e, #c45940, #b15641, #9f5341, #8c5042);
@@ -151,7 +153,7 @@ nav {
     #bd8072,
     #c3988e,
     #c8b0ab
-  );
+);
   background-image: linear-gradient(
     to bottom,
     #1b0848,
@@ -182,6 +184,7 @@ nav {
     #c94d33,
     #d14d30
   );
+  background-image: $base-background-image;
   // background-image: linear-gradient(to right, #f05e3c, #f26644, #f56d4d, #f77555, #f97c5d);
   display: flex;
   align-items: center;
@@ -270,11 +273,12 @@ section.text-banner {
       color: $secondary-color;
       font-size: 3rem;
       font-weight: 600;
+      // text-transform: capitalize;
     }
     p {
       text-align: center;
       color: $secondary-color;
-      font-size: 1.5rem;
+      font-size: 1.9rem;
       font-weight: 500;
     }
     .text-banner-button {
@@ -508,5 +512,16 @@ section.client-says {
         }
       }
     }
+  }
+}
+@keyframes bg-changes{
+  0%{
+    background-position: 0% 0%;
+  }
+  50%{
+    background-position: 50% 0%;
+  }
+  100%{
+    background-position: 100% 0%;
   }
 }
