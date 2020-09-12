@@ -1,0 +1,19 @@
+[33md8d0b15[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m HEAD@{0}: pull --tags origin master: Merge made by the 'recursive' strategy.
+[33m4a7c30f[m[33m ([m[1;31morigin/dev[m[33m, [m[1;32mdev[m[33m)[m HEAD@{1}: merge UploadiT: Fast-forward
+[33m6db58d6[m HEAD@{2}: checkout: moving from UploadiT to master
+[33m4a7c30f[m[33m ([m[1;31morigin/dev[m[33m, [m[1;32mdev[m[33m)[m HEAD@{3}: commit: Made Some UI Changes
+[33m9ca8587[m HEAD@{4}: commit: few changes
+[33m3fba289[m HEAD@{5}: commit: just some little changes
+[33m8473a21[m HEAD@{6}: checkout: moving from statrting-working-on-whole to UploadiT
+[33m8473a21[m HEAD@{7}: commit: goinng to upload it.
+[33m52ce9fd[m HEAD@{8}: commit: footer-is-okay
+[33mcd3400b[m HEAD@{9}: commit: almost complete
+[33m5c7b997[m HEAD@{10}: commit: Working on whole project
+[33m9d2f183[m HEAD@{11}: checkout: moving from responsive-fixed to statrting-working-on-whole
+[33m9d2f183[m HEAD@{12}: commit: final chanes
+[33mfa83892[m HEAD@{13}: commit: sdf
+[33mb58c9bb[m HEAD@{14}: commit: it's repsonsive now
+[33m1a0d56f[m HEAD@{15}: checkout: moving from For-Mobile-App to responsive-fixed
+[33m1a0d56f[m HEAD@{16}: commit: Changes
+[33m6db58d6[m HEAD@{17}: checkout: moving from master to For-Mobile-App
+[33m6db58d6[m HEAD@{18}: commit (initial): initial commit
